@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Subhashini Venkatachalam</title>
-  <link rel="stylesheet" href="portfolioStyle.css">
-
+  <title>Subhashini Venkatachalam — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="claudeindex.css">
 </head>
-
 <body>
-  <div class="nav">
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
     <div class="nav-inner">
-      <div class="brand"><span class="dot"></span> Subhashini Venkatachalam</div>
-      <div class="links">
+      <div class="brand">
+        <span class="brand-icon"></span>
+        <span class="brand-name">SV</span>
+      </div>
+      <div class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
@@ -20,217 +26,328 @@
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </div>
+      <a class="nav-cta" href="Subhashini_SWE_Resume.docx" download>Download CV</a>
     </div>
-  </div>
+  </nav>
 
-  <div class="wrap">
-    <section class="hero" id="top">
-      <div class="hero-inner">
-        <h1 class="title">Subhashini Venkatachalam</h1>
-        <p class="subtitle">Software Engineer • Full Stack Developer • AI/ML Enthusiast</p>
-
-        <div class="cta-row">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="mailto:subhavenkat200@gmail.com">Email Me</a>
-          <a class="btn" href="https://www.linkedin.com/in/subhashini20" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="https://github.com/SubhashiniVenkatachalam" target="_blank" rel="noopener">GitHub</a>
-        </div>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        Open to full-time Software Engineer roles
       </div>
-    </section>
+      <h1 class="hero-name">Subhashini<br><em>Venkatachalam</em></h1>
+      <p class="hero-tagline">Software Engineer · .NET &amp; Cloud Backends · Healthcare Data Systems</p>
+      <p class="hero-desc">3+ years building scalable APIs, cloud data pipelines, and CI/CD automation in healthcare — now based in Fort Collins, CO and seeking my next engineering challenge.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#projects">See My Work</a>
+        <a class="btn-ghost" href="mailto:subhavenkat200@gmail.com">Get in Touch</a>
+        <a class="btn-icon" href="https://www.linkedin.com/in/subhashini20" target="_blank" rel="noopener" title="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a class="btn-icon" href="https://github.com/SubhashiniVenkatachalam" target="_blank" rel="noopener" title="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Experience</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">1M+</span><span class="stat-label">Records Processed Weekly</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">99.9%</span><span class="stat-label">Pipeline Uptime</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">30%</span><span class="stat-label">Deployment Time Reduction</span></div>
+      </div>
+    </div>
+  </section>
 
+  <main class="main">
+
+    <!-- ABOUT -->
     <section class="section" id="about">
-      <div class="section-head">
-        <h2 class="section-title">About</h2>
-      </div>
-      <div class="section-body">
-        <p class="muted" style="margin:0;">
-          Results-driven Software Engineer with expertise in backend systems, cloud data platforms, REST API development,
-          and business intelligence solutions. Experienced in healthcare data processing, ETL pipelines handling 1M+ records weekly,
-          and CI/CD automation using Azure DevOps and Docker.
-        </p>
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-heading">Building systems that <em>actually work</em> at scale.</h2>
+          <p>I'm a software engineer who spent 3 years deep inside US healthcare data at Cognizant — building the APIs, ETL pipelines, and CI/CD workflows that kept compliance systems running reliably for millions of patient records.</p>
+          <p>I'm now finishing my Master's in Computer Information Systems at Colorado State University (May 2025), expanding into AI/ML and cloud architecture, and ready to bring that same rigor to a new engineering team.</p>
+          <p>I care about clean APIs, reliable pipelines, and shipping code that doesn't break at 2am.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-inner">
+            <div class="about-item"><span class="about-icon">📍</span><div><div class="about-item-label">Location</div><div class="about-item-val">Fort Collins, Colorado</div></div></div>
+            <div class="about-item"><span class="about-icon">🎓</span><div><div class="about-item-label">Degree</div><div class="about-item-val">M.S. Computer Information Systems, CSU</div></div></div>
+            <div class="about-item"><span class="about-icon">💼</span><div><div class="about-item-label">Domain</div><div class="about-item-val">Healthcare Data & Cloud Backends</div></div></div>
+            <div class="about-item"><span class="about-icon">🔍</span><div><div class="about-item-label">Status</div><div class="about-item-val seeking">Actively seeking SWE roles</div></div></div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- SKILLS -->
     <section class="section" id="skills">
-      <div class="section-head">
-        <h2 class="section-title">Skills</h2>
-      </div>
-      <div class="section-body">
-        <div class="grid two">
-          <div class="card">
-            <h4>Core</h4>
-            <div class="chips">
-              <span class="chip">C#</span><span class="chip">Java</span><span class="chip">.NET Core</span><span class="chip">SQL</span>
-              <span class="chip">REST APIs</span><span class="chip">ASP.NET MVC</span><span class="chip">Spring Boot</span>
-              <span class="chip">Azure DevOps</span><span class="chip">Docker</span><span class="chip">Power BI</span>
-            </div>
-          </div>
-          <div class="card">
-            <h4>Cloud + Data</h4>
-            <div class="chips">
-              <span class="chip">Snowflake</span><span class="chip">Azure Data Factory</span><span class="chip">AWS (S3, Lambda)</span>
-              <span class="chip">ETL</span><span class="chip">SSIS</span><span class="chip">Jenkins</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:14px;">
-          <h4>AI / ML</h4>
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-heading">Technical Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-title">Languages</div>
           <div class="chips">
-            <span class="chip">Python</span><span class="chip">TensorFlow</span><span class="chip">CNN</span><span class="chip">ResNet-50</span>
-            <span class="chip">Image Classification</span>
+            <span class="chip accent">C#</span><span class="chip accent">SQL</span><span class="chip">Python</span><span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Frameworks & APIs</div>
+          <div class="chips">
+            <span class="chip accent">.NET Core</span><span class="chip accent">ASP.NET MVC</span><span class="chip">REST APIs</span><span class="chip">Microservices</span><span class="chip">ADO.NET</span><span class="chip">Spring Boot</span><span class="chip">Angular</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Cloud & DevOps</div>
+          <div class="chips">
+            <span class="chip accent">Azure DevOps</span><span class="chip accent">Docker</span><span class="chip accent">Snowflake</span><span class="chip">Azure Data Factory</span><span class="chip">AWS S3/Lambda</span><span class="chip">Jenkins</span><span class="chip">CI/CD</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Data & Analytics</div>
+          <div class="chips">
+            <span class="chip accent">ETL Pipelines</span><span class="chip accent">Power BI</span><span class="chip">SSIS</span><span class="chip">MySQL</span><span class="chip">Oracle</span><span class="chip">NoSQL</span><span class="chip">Tableau</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">AI / ML</div>
+          <div class="chips">
+            <span class="chip">TensorFlow</span><span class="chip">CNN</span><span class="chip">ResNet-50</span><span class="chip">Image Classification</span><span class="chip">Scikit-learn</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Tools & Process</div>
+          <div class="chips">
+            <span class="chip">GitHub</span><span class="chip">JIRA</span><span class="chip">Agile/Scrum</span><span class="chip">Visual Studio</span><span class="chip">SDLC</span>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section class="section" id="experience">
-      <div class="section-head">
-        <h2 class="section-title">Experience</h2>
-      </div>
-      <div class="section-body">
-        <div class="card">
-          <h4>
-            Data Analyst (Volunteer) — Community Dreams Foundation | Fort Collins, CO
-            <span class="meta">May 2025 – Present</span>
-          </h4>
-          <ul>
-            <li>Built Power BI dashboards for Agile metrics (user stories, sprint velocity, burndown), reducing manual reporting effort by ~40%.</li>
-            <li>Automated weekly reporting pipelines using SQL and Power Query to enable near real-time PMG insights.</li>
-            <li>Improved visibility into sprint completion and bug tracking to support leadership resourcing decisions.</li>
-          </ul>
+      <div class="section-label">03 — Experience</div>
+      <h2 class="section-heading">Where I've Worked</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <div>
+                <div class="tcard-title">Software Engineer Associate</div>
+                <div class="tcard-company">Cognizant Technology Solutions <span class="tcard-domain">— Trizetto US Healthcare</span></div>
+              </div>
+              <div class="tcard-meta">
+                <div class="tcard-date">Oct 2021 – Jul 2024</div>
+                <div class="tcard-location">India</div>
+              </div>
+            </div>
+            <ul class="tcard-list">
+              <li>Engineered secure <strong>RESTful APIs</strong> using C# and ASP.NET Core with token-based auth, improving data flow efficiency by 25% and cutting latency by 15%</li>
+              <li>Automated <strong>CI/CD pipelines</strong> with Azure DevOps + Docker, reducing deployment time by 30% and enabling 15-minute release cycles</li>
+              <li>Migrated healthcare datasets from SQL Server to <strong>Snowflake</strong> via Azure Data Factory — cut query runtime by 35% while maintaining HIPAA/HEDIS/NCQA compliance</li>
+              <li>Built <strong>ETL pipelines</strong> processing 1M+ records weekly with 99.9% uptime for compliance reporting</li>
+              <li>Designed multi-format export system (UTF-8, UTF-16, Excel, TXT), boosting export reliability by 75%</li>
+              <li>Mentored 2 junior developers on SDLC best practices and timely delivery</li>
+            </ul>
+            <div class="tcard-chips">
+              <span class="tchip">C# / .NET Core</span><span class="tchip">Azure DevOps</span><span class="tchip">Docker</span><span class="tchip">Snowflake</span><span class="tchip">ETL</span><span class="tchip">HIPAA</span>
+            </div>
+          </div>
         </div>
 
-        <div class="card" style="margin-top:14px;">
-          <h4>
-            Software Engineer Associate — Cognizant Technology Solutions | India
-            <span class="meta">Oct 2021 – Jul 2024</span>
-          </h4>
-          <ul>
-            <li>Improved export reliability by 75% by fixing UTF-16 compatibility across multi-format exports (UTF-8/UTF-16/Excel/TXT), eliminating recurring defects.</li>
-            <li>Reduced API latency by ~15% via query optimization, payload tuning, indexing improvements, and standardized token-based auth.</li>
-            <li>Migrated healthcare datasets from SQL Server to Snowflake using Azure Data Factory; redesigned schemas and tuned queries to cut runtime ~35%.</li>
-            <li>Built scalable ETL pipelines processing 1M+ records weekly with 99.9% uptime to support compliance reporting (HEDIS, NCQA).</li>
-            <li>Automated CI/CD across environments using Azure DevOps + Docker, shrinking deployment effort and enabling faster release cycles.</li>
-          </ul>
+        <div class="timeline-item">
+          <div class="timeline-dot dim"></div>
+          <div class="timeline-card dim-card">
+            <div class="tcard-header">
+              <div>
+                <div class="tcard-title">Data Analyst <span class="volunteer-badge">Volunteer</span></div>
+                <div class="tcard-company">Community Dreams Foundation</div>
+              </div>
+              <div class="tcard-meta">
+                <div class="tcard-date">May 2025 – Present</div>
+                <div class="tcard-location">Fort Collins, CO</div>
+              </div>
+            </div>
+            <ul class="tcard-list">
+              <li>Automated SQL-based reporting pipelines for weekly data processing, enabling near real-time insights</li>
+              <li>Developed Power BI dashboards tracking Agile metrics (velocity, burndown, sprint progress), reducing manual effort by 40%</li>
+              <li>Standardized dashboard documentation, achieving 100% metric consistency and 30% adoption increase</li>
+            </ul>
+            <div class="tcard-chips">
+              <span class="tchip">SQL</span><span class="tchip">Power BI</span><span class="tchip">Agile</span>
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section class="section" id="projects">
-      <div class="section-head">
-        <h2 class="section-title">Projects</h2>
-      </div>
-      <div class="section-body">
-        <div class="grid two">
-          <div class="card">
-            <h4>
-              Medicinal Plant Image Recognition
-              <a class="inline-link" href="https://github.com/SubhashiniVenkatachalam/Medicinal-Plant-Recognizer" target="_blank" rel="noopener">View</a>
-            </h4>
-            <ul>
-              <li>Built an image classifier with TensorFlow using transfer learning (ResNet-50) to identify medicinal plant species.</li>
-              <li>Applied preprocessing + augmentation (resize/normalize/flip/rotate) to improve generalization and reduce overfitting.</li>
-              <li>Evaluated with accuracy + confusion matrix; structured training/prediction pipeline for easy experimentation and deployment.</li>
-            </ul>
-          </div>
+      <div class="section-label">04 — Projects</div>
+      <h2 class="section-heading">Things I've Built</h2>
+      <div class="projects-grid">
 
-          <div class="card">
-            <h4>
-              Elephant Call Classification
-              <a class="inline-link" href="https://github.com/SubhashiniVenkatachalam/Elephant-Call-Prediction" target="_blank" rel="noopener">View</a>
-            </h4>
-            <ul>
-              <li>Processed 886 vocalization samples with cleaning, normalization and feature engineering.</li>
-              <li>Compared Decision Tree (~75.6%), Neural Net (~68.4%), and Logistic Regression (~64.3%) models.</li>
-              <li>Used F1-score and classification analysis to distinguish directed vs non-directed communication.</li>
-            </ul>
+        <div class="proj-card featured">
+          <div class="proj-tag">In Progress</div>
+          <div class="proj-icon-area rag-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
           </div>
-
-          <div class="card">
-            <h4>
-              Customer Churn Analytics Dashboard
-              <a class="inline-link" href="https://github.com/SubhashiniVenkatachalam/Customer-Churn-Analysis-PowerBI" target="_blank" rel="noopener">View</a>
-            </h4>
-            <ul>
-              <li>Built an interactive Power BI dashboard on 10K+ customer records to surface churn patterns and segments.</li>
-              <li>Used Power Query + SQL for cleaning; created DAX measures for KPIs and churn drivers.</li>
-              <li>Identified higher churn among frequent buyers and proposed targeted retention strategies.</li>
-            </ul>
+          <h3 class="proj-title">Retrieval-Augmented Generation (RAG) AI System</h3>
+          <p class="proj-desc">AI-powered question-answering system using LLMs + vector database for contextual retrieval. Building document embedding pipelines, semantic search, and prompt engineering with LangChain/OpenAI APIs.</p>
+          <div class="proj-chips">
+            <span class="pchip">Python</span><span class="pchip">LangChain</span><span class="pchip">OpenAI API</span><span class="pchip">Vector DB</span>
           </div>
-
-        <div class="card">
-        <h4>
-            Retrieval-Augmented Generation (RAG) AI System
-            <span class="meta">In Progress</span>
-        </h4>
-        <ul>
-            <li>
-            Designing an AI-powered question-answering system using Large Language Models integrated with a vector database for contextual retrieval.
-            </li>
-            <li>
-            Implementing document embedding pipelines, semantic search, and prompt engineering to enhance response accuracy.
-            </li>
-            <li>
-            Exploring LangChain / OpenAI APIs with scalable backend integration for enterprise-ready deployment.
-            </li>
-        </ul>
-        <p class="muted" style="margin-top:10px;">
-            🚀 Currently under active development. GitHub repository will be published soon.
-        </p>
+          <span class="proj-wip">🚀 GitHub coming soon</span>
         </div>
+
+        <div class="proj-card">
+          <div class="proj-icon-area plant-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22V12"/><path d="M12 12C12 7 7 4 3 6c0 5 4 8 9 6z"/><path d="M12 12c0-5 5-8 9-6 0 5-4 8-9 6z"/></svg>
+          </div>
+          <h3 class="proj-title">Medicinal Plant Image Recognition</h3>
+          <p class="proj-desc">CNN classifier using TensorFlow + ResNet-50 transfer learning to identify medicinal species from 1,000+ leaf images. Achieved 85% accuracy via preprocessing and data augmentation.</p>
+          <div class="proj-chips">
+            <span class="pchip">Python</span><span class="pchip">TensorFlow</span><span class="pchip">ResNet-50</span><span class="pchip">CNN</span>
+          </div>
+          <a class="proj-link" href="https://github.com/SubhashiniVenkatachalam/Medicinal-Plant-Recognizer" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-icon-area churn-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <h3 class="proj-title">Customer Churn Analytics Dashboard</h3>
+          <p class="proj-desc">Interactive Power BI dashboard on 10K+ customer records surfacing churn patterns. Used Power Query + SQL for cleaning; DAX measures for KPIs. Identified high-churn segments and proposed retention strategies.</p>
+          <div class="proj-chips">
+            <span class="pchip">Power BI</span><span class="pchip">DAX</span><span class="pchip">SQL</span><span class="pchip">Power Query</span>
+          </div>
+          <a class="proj-link" href="https://github.com/SubhashiniVenkatachalam/Customer-Churn-Analysis-PowerBI" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-icon-area elephant-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12h3M7 6l-2-2M7 18l-2 2"/><rect x="7" y="4" width="10" height="16" rx="2"/><path d="M17 8l3-2M17 16l3 2"/></svg>
+          </div>
+          <h3 class="proj-title">Elephant Call Classification</h3>
+          <p class="proj-desc">Processed 886 wildlife audio samples with feature engineering to classify elephant vocalizations. Compared Decision Tree (75.6%), Neural Net (68.4%), and Logistic Regression (64.3%) models using F1-score analysis.</p>
+          <div class="proj-chips">
+            <span class="pchip">Python</span><span class="pchip">KNIME</span><span class="pchip">Feature Engineering</span>
+          </div>
+          <a class="proj-link" href="https://github.com/SubhashiniVenkatachalam/Elephant-Call-Prediction" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+
+      </div>
     </section>
 
+    <!-- EDUCATION -->
     <section class="section" id="education">
-      <div class="section-head">
-        <h2 class="section-title">Education</h2>
-      </div>
-      <div class="section-body">
-        <div class="card">
-          <h4>
-            Colorado State University — Fort Collins, CO
-            <span class="meta">M.S. Computer Information Systems • GPA: 3.6</span>
-          </h4>
-          <p class="muted" style="margin:8px 0 0;">
-            Relevant coursework: Software Engineering, Data Structures & Algorithms, Database Systems, Cloud Computing (Azure, AWS),
-            AI & Machine Learning (TensorFlow, CNNs), Business Intelligence
-          </p>
+      <div class="section-label">05 — Education</div>
+      <h2 class="section-heading">Academic Background</h2>
+      <div class="edu-grid">
+        <div class="edu-card primary-edu">
+          <div class="edu-degree">M.S. Computer Information Systems</div>
+          <div class="edu-school">Colorado State University</div>
+          <div class="edu-meta">Fort Collins, CO &nbsp;·&nbsp; Jan 2024 – May 2025 &nbsp;·&nbsp; GPA 3.6/4.0</div>
+          <div class="edu-courses">
+            <span class="ecourse">Software Engineering</span>
+            <span class="ecourse">Data Structures & Algorithms</span>
+            <span class="ecourse">Cloud Computing (Azure, AWS)</span>
+            <span class="ecourse">AI & Machine Learning</span>
+            <span class="ecourse">Database Systems</span>
+            <span class="ecourse">Business Intelligence</span>
+          </div>
         </div>
+        <div class="edu-card">
+          <div class="edu-degree">B.E. Electrical & Electronics Engineering</div>
+          <div class="edu-school">Anna University</div>
+          <div class="edu-meta">India &nbsp;·&nbsp; Aug 2017 – May 2021 &nbsp;·&nbsp; GPA 3.6/4.0</div>
+          <div class="edu-courses">
+            <span class="ecourse">OOP</span>
+            <span class="ecourse">Operating Systems</span>
+            <span class="ecourse">Computer Networks</span>
+            <span class="ecourse">Data Mining</span>
+            <span class="ecourse">Web Development</span>
+          </div>
+        </div>
+      </div>
 
-        <div class="card" style="margin-top:14px;">
-          <h4>
-            Anna University — India
-            <span class="meta">B.E. Electrical & Electronics Engineering • GPA: 3.6</span>
-          </h4>
-          <p class="muted" style="margin:8px 0 0;">
-            Relevant coursework: Object-Oriented Programming, Operating Systems, Computer Networks, Data Mining, Web Development
-          </p>
+      <div class="certs-area">
+        <div class="certs-title">Certifications</div>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-badge az">AZ</div>
+            <div><div class="cert-name">Microsoft Certified: Azure Fundamentals</div><div class="cert-sub">AZ-900</div></div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-badge bi">BI</div>
+            <div><div class="cert-name">Business Intelligence Certificate</div><div class="cert-sub">Power BI · SQL · DAX · ETL</div></div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-badge pm">PM</div>
+            <div><div class="cert-name">Project Management in IT</div><div class="cert-sub">Agile/Scrum · JIRA</div></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
-      <div class="section-head">
-        <h2 class="section-title">Contact</h2>
-      </div>
-      <div class="section-body">
-        <p class="muted" style="margin:0;">
-          Reach out via email or LinkedIn.
-        </p>
-        <div class="row">
-          <a class="btn primary" href="mailto:subhavenkat200@gmail.com">subhavenkat200@gmail.com</a>
-          <a class="btn" href="https://www.linkedin.com/in/subhashini20" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="https://github.com/SubhashiniVenkatachalam" target="_blank" rel="noopener">GitHub</a>
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-inner">
+        <div class="section-label light-label">06 — Contact</div>
+        <h2 class="contact-heading">Let's build something together.</h2>
+        <p class="contact-sub">I'm actively looking for Software Engineer roles. If you have an opportunity or just want to connect, I'd love to hear from you.</p>
+        <div class="contact-links">
+          <a class="contact-btn primary" href="mailto:subhavenkat200@gmail.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            subhavenkat200@gmail.com
+          </a>
+          <a class="contact-btn" href="https://www.linkedin.com/in/subhashini20" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a class="contact-btn" href="https://github.com/SubhashiniVenkatachalam" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
         </div>
       </div>
     </section>
-  </div>
+
+  </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      <div style="font-weight:800;">Subhashini Venkatachalam</div>
-      <div style="margin-top:6px;">© 2026 • Fort Collins, CO</div>
+      <div class="footer-name">Subhashini Venkatachalam</div>
+      <div class="footer-copy">© 2026 · Fort Collins, CO · Built with care</div>
     </div>
   </footer>
+
+  <script>
+    // Scroll-triggered nav shadow
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Intersection Observer for section fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.section, .timeline-item, .proj-card, .edu-card, .cert-card')
+      .forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
