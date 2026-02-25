@@ -1,276 +1,236 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Subhashini Venkatachalam</title>
-    <style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f2f4f8;
-    color: #333;
-    line-height: 1.7;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subhashini Venkatachalam</title>
+  <link rel="stylesheet" href="portfolioStyle.css">
 
-/* Header */
-.header {
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    background: url("header-bg.jpg") center/cover no-repeat;
-    background-position: 50% 30%;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 600;
-}
-
-.header h3 {
-    margin-top: 12px;
-    font-weight: 400;
-    font-size: 18px;
-}
-
-/* Container */
-.container {
-    width: 92%;
-    max-width: 1100px;   /* increased width */
-    margin: 40px auto;
-}
-
-/* Cards */
-.card {
-    background: white;
-    padding: 35px 40px;   /* more spacing */
-    margin-bottom: 35px;
-    border-radius: 10px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-}
-
-/* Section Titles */
-.card h2 {
-    color: #1f6fd6;
-    border-bottom: 3px solid #1f6fd6;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 22px;
-}
-
-/* Experience Titles */
-.card h4 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-/* Lists */
-ul {
-    padding-left: 22px;
-}
-
-li {
-    margin-bottom: 10px;   /* space between bullet lines */
-}
-
-
-/* Footer */
-.footer {
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    background: url("header-bg.jpg") center/cover no-repeat;
-    background-position: 50% 30%;
-
-
-}
-
-.footer a {
-    color: #1f6fd6;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
-    </style>
 </head>
 
 <body>
+  <div class="nav">
+    <div class="nav-inner">
+      <div class="brand"><span class="dot"></span> Subhashini Venkatachalam</div>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
 
-<div class="header">
-    <h1>Subhashini Venkatachalam</h1>
-    <h3>Software Engineer | Full Stack Developer | AI/ML Enthusiast</h3>
-</div>
+  <div class="wrap">
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <h1 class="title">Subhashini Venkatachalam</h1>
+        <p class="subtitle">Software Engineer • Full Stack Developer • AI/ML Enthusiast</p>
 
-<div class="container">
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="mailto:subhavenkat200@gmail.com">Email Me</a>
+          <a class="btn" href="https://www.linkedin.com/in/subhashini20" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/SubhashiniVenkatachalam" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="card">
-        <h2>About Me</h2>
-        <p>
-            Results-driven Software Engineer with expertise in backend systems, cloud data platforms,
-            REST API development, and business intelligence solutions. Experienced in healthcare
-            data processing, ETL pipelines handling 1M+ records weekly, and CI/CD automation using Azure DevOps and Docker.
+    <section class="section" id="about">
+      <div class="section-head">
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="section-body">
+        <p class="muted" style="margin:0;">
+          Results-driven Software Engineer with expertise in backend systems, cloud data platforms, REST API development,
+          and business intelligence solutions. Experienced in healthcare data processing, ETL pipelines handling 1M+ records weekly,
+          and CI/CD automation using Azure DevOps and Docker.
         </p>
-    </div>
+      </div>
+    </section>
 
-    <div class="card">
-        <h2>Skills</h2>
-        <p><b>Programming Languages:</b> C#, Python, SQL, JavaScript, Java, HTML/CSS</p>
-        <p><b>Frameworks & Tools:</b> .NET Core, ASP.NET MVC, Angular, Docker, SSIS</p>
-        <p><b>Cloud & DevOps:</b> Azure DevOps, AWS (S3, Lambda), Snowflake, Jenkins, CI/CD</p>
-        <p><b>Data & BI:</b> Power BI, MySQL, Oracle, NoSQL, ETL</p>
-        <p><b>AI / ML:</b> TensorFlow, CNN, ResNet-50, Image Classification</p>
-    </div>
+    <section class="section" id="skills">
+      <div class="section-head">
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="section-body">
+        <div class="grid two">
+          <div class="card">
+            <h4>Core</h4>
+            <div class="chips">
+              <span class="chip">C#</span><span class="chip">Java</span><span class="chip">.NET Core</span><span class="chip">SQL</span>
+              <span class="chip">REST APIs</span><span class="chip">ASP.NET MVC</span><span class="chip">Spring Boot</span>
+              <span class="chip">Azure DevOps</span><span class="chip">Docker</span><span class="chip">Power BI</span>
+            </div>
+          </div>
+          <div class="card">
+            <h4>Cloud + Data</h4>
+            <div class="chips">
+              <span class="chip">Snowflake</span><span class="chip">Azure Data Factory</span><span class="chip">AWS (S3, Lambda)</span>
+              <span class="chip">ETL</span><span class="chip">SSIS</span><span class="chip">Jenkins</span>
+            </div>
+          </div>
+        </div>
 
-<div class="card">
-    <h2>Professional Experience</h2>
+        <div class="card" style="margin-top:14px;">
+          <h4>AI / ML</h4>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">TensorFlow</span><span class="chip">CNN</span><span class="chip">ResNet-50</span>
+            <span class="chip">Image Classification</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h4>Data Analyst (Volunteer) | Community Dreams Foundation (May 2025 – Present)</h4>
-    <ul>
-        <li>Built Power BI dashboards for Agile metrics (user stories, sprint velocity, burndown), reducing manual reporting effort by 40%.</li>
-        <li>Automated weekly reporting pipelines using SQL and Power Query, enabling real-time PMG team insights.</li>
-        <li>Improved visibility of sprint completion and bug tracking to support leadership resource allocation decisions.</li>
-    </ul>
+    <section class="section" id="experience">
+      <div class="section-head">
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="section-body">
+        <div class="card">
+          <h4>
+            Data Analyst (Volunteer) — Community Dreams Foundation | Fort Collins, CO
+            <span class="meta">May 2025 – Present</span>
+          </h4>
+          <ul>
+            <li>Built Power BI dashboards for Agile metrics (user stories, sprint velocity, burndown), reducing manual reporting effort by ~40%.</li>
+            <li>Automated weekly reporting pipelines using SQL and Power Query to enable near real-time PMG insights.</li>
+            <li>Improved visibility into sprint completion and bug tracking to support leadership resourcing decisions.</li>
+          </ul>
+        </div>
 
-    <h4>Software Engineer Associate | Cognizant (Oct 2021 – Jul 2024)</h4>
-    <ul>
-        <li>Improved report export reliability by 75% by identifying and resolving UTF-16 encoding compatibility issues across multi-format data exports (UTF-8, UTF-16, Excel, TXT), ensuring seamless client-side integration and eliminating recurring production defects.</li>
+        <div class="card" style="margin-top:14px;">
+          <h4>
+            Software Engineer Associate — Cognizant Technology Solutions | India
+            <span class="meta">Oct 2021 – Jul 2024</span>
+          </h4>
+          <ul>
+            <li>Improved export reliability by 75% by fixing UTF-16 compatibility across multi-format exports (UTF-8/UTF-16/Excel/TXT), eliminating recurring defects.</li>
+            <li>Reduced API latency by ~15% via query optimization, payload tuning, indexing improvements, and standardized token-based auth.</li>
+            <li>Migrated healthcare datasets from SQL Server to Snowflake using Azure Data Factory; redesigned schemas and tuned queries to cut runtime ~35%.</li>
+            <li>Built scalable ETL pipelines processing 1M+ records weekly with 99.9% uptime to support compliance reporting (HEDIS, NCQA).</li>
+            <li>Automated CI/CD across environments using Azure DevOps + Docker, shrinking deployment effort and enabling faster release cycles.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <li>Reduced REST API latency by 15% through query optimization, efficient payload structuring, improved indexing strategies, and standardized token-based authentication mechanisms.</li>
-
-        <li>Led migration of healthcare datasets from SQL Server to Snowflake using Azure Data Factory, reducing execution time by 35% while maintaining HIPAA-compliant data governance standards.</li>
-
-        <li>Engineered scalable ETL pipelines processing over 1M+ healthcare records weekly, achieving 99.9% system uptime and ensuring compliance-driven reporting (HEDIS, NCQA).</li>
-
-        <li>Automated multi-environment CI/CD pipelines using Azure DevOps and Docker, reducing deployment effort by 30% and achieving sub-15-minute release cycles.</li>
-    </ul>
-</div>
-<div class="card">
-    <h2>Academic Projects</h2>
-
-    <h4>
-        Medicinal Plant Image Recognition 
-        <span style="font-weight:300;"> | </span>
-        <a href="https://github.com/SubhashiniVenkatachalam/Medicinal-Plant-Recognizer" target="_blank">
-            GitHub
-        </a>
-    </h4>
-    <ul>
-        <li>
-            Designed and implemented a deep learning-based image classification system using TensorFlow and transfer learning with ResNet-50 to accurately identify medicinal plant species.
-        </li>
-        <li>
-            Performed dataset preprocessing including resizing, normalization, augmentation, and train-validation split to improve model generalization and reduce overfitting.
-        </li>
-        <li>
-            Optimized model performance using hyperparameter tuning, evaluated using accuracy, precision, recall, and confusion matrix metrics.
-        </li>
-        <li>
-            Structured scalable training, validation, and prediction pipelines enabling modular experimentation and future deployment integration.
-        </li>
-    </ul>
-
-    <h4>
-        Elephant Call Classification
-        <span style="font-weight:300;"> | </span>
-        <a href="https://github.com/SubhashiniVenkatachalam/Elephant-Call-Prediction" target="_blank">
-            GitHub
-        </a>
-    </h4>   
-    <ul>
-        <li>
-            Processed 886 elephant vocalization samples using data cleaning, missing value imputation, normalization (frequency, modulation, distance), and feature engineering techniques.
-        </li>
-        <li>
-            Built and compared multiple supervised learning models including Decision Tree (75.6% accuracy), Neural Network (68.4%), and Logistic Regression (64.3%).
-        </li>
-        <li>
-            Conducted model evaluation using F1-score and classification analysis to differentiate directed vs non-directed communication patterns.
-        </li>
-        <li>
-            Delivered actionable insights showcasing strong statistical modeling and experimental comparison methodology.
-        </li>
-    </ul>
-
-    <h4>
-        Customer Churn Analytics Dashboard
-        <span style="font-weight:300;"> | </span>
-        <a href="https://github.com/SubhashiniVenkatachalam/Customer-Churn-Analysis-PowerBI" target="_blank">
-            GitHub
-        </a>
-    </h4>  
-    <ul>
-        <li>
-            Developed an interactive Power BI dashboard analyzing 10K+ retail customer records to identify churn trends and behavioral segmentation.
-        </li>
-        <li>
-            Cleaned and transformed raw datasets using Power Query and SQL for accurate KPI modeling and DAX-based metric calculations.
-        </li>
-        <li>
-            Identified 15% higher churn among frequent buyers and proposed targeted retention strategies backed by visual analytics.
-        </li>
-        <li>
-            Designed executive-level dashboards enabling stakeholder-driven decision-making with real-time insights.
-        </li>
-    </ul>
-
-</div>
-
-<div class="card">
-    <h2>Education</h2>
-
-    <ul>
-        <li>
-            <b>Colorado State University – Fort Collins, CO</b>
+    <section class="section" id="projects">
+      <div class="section-head">
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="section-body">
+        <div class="grid two">
+          <div class="card">
+            <h4>
+              Medicinal Plant Image Recognition
+              <a class="inline-link" href="https://github.com/SubhashiniVenkatachalam/Medicinal-Plant-Recognizer" target="_blank" rel="noopener">View</a>
+            </h4>
             <ul>
-                <li>Master's in Computer Information Systems | GPA: 3.6</li>
-                <li>
-                    Relevant Courses: Software Engineering, Data Structures & Algorithms,
-                    Database Systems, Cloud Computing (Azure, AWS),
-                    Artificial Intelligence & Machine Learning (TensorFlow, CNNs),
-                    Business Intelligence
-                </li>
+              <li>Built an image classifier with TensorFlow using transfer learning (ResNet-50) to identify medicinal plant species.</li>
+              <li>Applied preprocessing + augmentation (resize/normalize/flip/rotate) to improve generalization and reduce overfitting.</li>
+              <li>Evaluated with accuracy + confusion matrix; structured training/prediction pipeline for easy experimentation and deployment.</li>
             </ul>
-        </li>
+          </div>
 
-        <br>
-
-        <li>
-            <b>Anna University – India</b>
+          <div class="card">
+            <h4>
+              Elephant Call Classification
+              <a class="inline-link" href="https://github.com/SubhashiniVenkatachalam/Elephant-Call-Prediction" target="_blank" rel="noopener">View</a>
+            </h4>
             <ul>
-                <li>Bachelor's in Electrical & Electronics Engineering | GPA: 3.6</li>
-                <li>
-                    Relevant Courses: Object-Oriented Programming,
-                    Operating Systems, Computer Networks,
-                    Data Mining, Web Development
-                </li>
+              <li>Processed 886 vocalization samples with cleaning, normalization and feature engineering.</li>
+              <li>Compared Decision Tree (~75.6%), Neural Net (~68.4%), and Logistic Regression (~64.3%) models.</li>
+              <li>Used F1-score and classification analysis to distinguish directed vs non-directed communication.</li>
             </ul>
-        </li>
-    </ul>
-</div>
- </div>
-<div class="footer">
-    <p>
-  Contact me: 
-  <a href="mailto:subhavenkat200@gmail.com">
-    subhavenkat200@gmail.com
-  </a>
-</p>
-    <p>
-        <a href="https://www.linkedin.com/in/subhashini20" target="_blank">
-            LinkedIn
-        </a>
-         &nbsp; | &nbsp;
-        <a href="https://github.com/SubhashiniVenkatachalam" target="_blank">
-            GitHub
-        </a>
-    </p>
-    <p>© 2026 Subhashini Venkatachalam</p>
-</div>   
-   
+          </div>
 
-</div>
+          <div class="card">
+            <h4>
+              Customer Churn Analytics Dashboard
+              <a class="inline-link" href="https://github.com/SubhashiniVenkatachalam/Customer-Churn-Analysis-PowerBI" target="_blank" rel="noopener">View</a>
+            </h4>
+            <ul>
+              <li>Built an interactive Power BI dashboard on 10K+ customer records to surface churn patterns and segments.</li>
+              <li>Used Power Query + SQL for cleaning; created DAX measures for KPIs and churn drivers.</li>
+              <li>Identified higher churn among frequent buyers and proposed targeted retention strategies.</li>
+            </ul>
+          </div>
 
+        <div class="card">
+        <h4>
+            Retrieval-Augmented Generation (RAG) AI System
+            <span class="meta">In Progress</span>
+        </h4>
+        <ul>
+            <li>
+            Designing an AI-powered question-answering system using Large Language Models integrated with a vector database for contextual retrieval.
+            </li>
+            <li>
+            Implementing document embedding pipelines, semantic search, and prompt engineering to enhance response accuracy.
+            </li>
+            <li>
+            Exploring LangChain / OpenAI APIs with scalable backend integration for enterprise-ready deployment.
+            </li>
+        </ul>
+        <p class="muted" style="margin-top:10px;">
+            🚀 Currently under active development. GitHub repository will be published soon.
+        </p>
+        </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="section-head">
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="section-body">
+        <div class="card">
+          <h4>
+            Colorado State University — Fort Collins, CO
+            <span class="meta">M.S. Computer Information Systems • GPA: 3.6</span>
+          </h4>
+          <p class="muted" style="margin:8px 0 0;">
+            Relevant coursework: Software Engineering, Data Structures & Algorithms, Database Systems, Cloud Computing (Azure, AWS),
+            AI & Machine Learning (TensorFlow, CNNs), Business Intelligence
+          </p>
+        </div>
+
+        <div class="card" style="margin-top:14px;">
+          <h4>
+            Anna University — India
+            <span class="meta">B.E. Electrical & Electronics Engineering • GPA: 3.6</span>
+          </h4>
+          <p class="muted" style="margin:8px 0 0;">
+            Relevant coursework: Object-Oriented Programming, Operating Systems, Computer Networks, Data Mining, Web Development
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-head">
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="section-body">
+        <p class="muted" style="margin:0;">
+          Reach out via email or LinkedIn.
+        </p>
+        <div class="row">
+          <a class="btn primary" href="mailto:subhavenkat200@gmail.com">subhavenkat200@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/subhashini20" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/SubhashiniVenkatachalam" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div style="font-weight:800;">Subhashini Venkatachalam</div>
+      <div style="margin-top:6px;">© 2026 • Fort Collins, CO</div>
+    </div>
+  </footer>
 </body>
 </html>
